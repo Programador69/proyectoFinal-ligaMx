@@ -1,0 +1,71 @@
+body {
+    background-color: #003954;
+    color: #ccc;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.verde {
+    color: #0db90d;
+}
+
+.rojo {
+    color: #f03535;
+}
+
+.amarillo {
+    color: #ffee77;
+}
+
+.leyenda li {
+  margin: 5px;
+}
+
+details {
+    margin-bottom: 30px;
+}
+
+details summary {
+    font-size: 20px;
+}
+
+.tituloJornada {
+  margin-bottom: 35px;
+}
+
+.resultados {
+    max-width: 700px;
+    margin: auto;
+    align-content: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.equipos li:nth-child(2) {
+  width: 80px;
+}
+
+.equipos li:nth-child(n+3) {
+  width: 30px;
+  align-self: flex-end;
+}
+
+.link {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+a {
+  color: #ccc;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <title>
+            <%= titulo %>
+        </title>
+        <link rel="stylesheet" href="../estilos/accesos.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+                <%= encabezado %>
+            </h1>
+        </header>
+
+        <main>
+            <section>
+                <figure>
+                    <% if (resumen == "aprobado") {  %>
+                    <img src="../imagenes/palomita.webp">
+                    <% } else { %>
+                    <img src="../imagenes/error.webp">
+                    <% } %>
+                </figure>
+                <p class="informacion">
+                    <%= mensaje %>
+                </p>
+            </section>
+
+            <span>
+                <% if (resumen == "aprobado") {  %>
+                <a href="/inicio">Ir a inicio</a>
+                <% } else { %>
+                <a href="../index.html">Ir a la pagina principal</a>
+                <% } %>
+            </span>
+        </main>
+        
+    </body>
+</html>

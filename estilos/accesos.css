@@ -1,0 +1,26 @@
+body {
+    background-color: #9ab;
+}
+
+h1 {
+    text-align: center;
+}
+
+figure, img {
+    width: 300px;
+    margin: auto;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+a {
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+.informacion {
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+body {
+    background-color: #00ade8;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.contenedor article {
+    width: 500px;
+    min-height: 250px;
+    background-color: #006d98;
+    box-shadow: 0 0 20px #fff;
+    color: #00bff9;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.contenedor article h3 {
+    text-align: center;
+}
+
+.inicioSesion form, .registrarUsuarios form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.inicioSesion form input, .registrarUsuarios form input {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #00f9ff;
+    border: none;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #003954;
+    color: #ccc;
+}
+
+input::placeholder {
+    color: #ccc;
+}

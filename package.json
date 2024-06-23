@@ -1,0 +1,28 @@
+{
+  "name": "api_rest_cesun",
+  "version": "1.0.0",
+  "description": "Trabajo de la escuela, crear una REST API con funcionalidades GET, POST, PUT, DELETE, etc.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manolo",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.3",
+    "picocolors": "^1.0.1",
+    "playwright": "^1.44.1"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "devDependencies": {
+    "eslint": "^9.3.0",
+    "standard": "^17.1.0"
+  }
+}

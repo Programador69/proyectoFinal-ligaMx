@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../estilos/ligaMx.css" />
+    <title>Ultima jornada</title>
+  </head>
+  <body>
+    <h1 class="tituloJornada">Resultados de la ultima jornada</h1>
+
+    <section>
+      <article>
+        <details>
+          <summary>Leyenda de los resultados</summary>
+          <ul class="leyenda">
+            <li class="amarillo">local - visitante -> aun sin jugar</li>
+            <li class="amarillo">local x - x visitante -> empate</li>
+            <li class="verde">local 3 - 2 visitante -> el ganador</li>
+            <li class="rojo">local 3 - 2 visitante -> el perdedor</li>
+          </ul>
+        </details>
+        <!-- TODO un cuadro para saber el codigo de colores y hacer con el elemento que viene con el sube y baja por defecto -->
+      </article>
+
+      <article class="resultados">
+        <% resultados.forEach(res => { %>
+        <ul>
+          <% if (res.marcadores[0] > res.marcadores[4]) { %>
+          <li class="verde"><%= res.locales %></li>
+          <li><%= res.marcadores %></li>
+          <li class="rojo"><%= res.visitantes %></li>
+          <% } else if (res.marcadores[0] < res.marcadores[4]) { %>
+          <li class="rojo"><%= res.locales %></li>
+          <li><%= res.marcadores %></li>
+          <li class="verde"><%= res.visitantes %></li>
+          <% } else { %>
+          <li class="amarillo"><%= res.locales %></li>
+          <li class="amarillo"><%= res.marcadores %></li>
+          <li class="amarillo"><%= res.visitantes %></li>
+          <% } %>
+        </ul>
+        <% }) %>
+      </article>
+
+      <article class="link">
+        <a href="/inicio">Regresar a inicio</a>
+      </article>
+    </section>
+  </body>
+</html>

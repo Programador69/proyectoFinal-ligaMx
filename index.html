@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Probando API</title>
+    <link rel="stylesheet" href="estilos/index.css" />
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Pagina de resultados de Futbol</h1>
+
+    <main>
+      <h2>Inicia Sesion ó Registrate para poder tener acceso VIP</h2>
+
+      <section class="contenedor">
+        <article class="inicioSesion">
+          <h3>Iniciar Sesion</h3>
+          <form action="/iniciarSesion" method="get">
+            <label>Introduzca su nombre</label>
+            <input
+              type="text"
+              name="inputNombre"
+              placeholder="Ejemplo: Bob Esponja"
+              id="inputNombreSesion"
+              required
+            />
+
+            <label for="inputContraseñaSesion">Introdusca su contraseña</label>
+            <input
+              type="password"
+              name="inputContraseña"
+              placeholder="Recuerdela bien 😉"
+              id="inputContraseñaSesion"
+              required
+            />
+
+            <button>Iniciar Sesión</button>
+          </form>
+        </article>
+
+        <article class="registrarUsuarios">
+          <h3>Registrar Usuario</h3>
+          <form action="/registrarUsuario" method="post">
+            <label for="inputNombreRegistro">Ingresa tu nombre completo</label>
+            <input
+              type="text"
+              name="inputNombreRegistro"
+              placeholder="Ejemplo: Bob Esponja"
+              id="inputNombreRegistro"
+              required
+            />
+
+            <label for="inputFechaRegistro"
+              >Ingresa tu fecha de nacimiento</label
+            >
+            <input
+              type="date"
+              name="inputFecha"
+              max="2010-01-01"
+              id="inputFechaRegistro"
+              required
+            />
+
+            <label for="inputCorreoRegistro">Ingresa tu correo</label>
+            <input
+              type="email"
+              name="inputCorreo"
+              placeholder="Ejemplo: ejemplo@institucion.com"
+              id="inputCorreoRegistro"
+              required
+            />
+
+            <label for="inputContraseñaRegistro">Ingrese su contraseña</label>
+            <input
+              type="password"
+              name="inputContraseñaRegistro"
+              placeholder="Al menos uno (1 n M $) y 12 en total"
+              min="12"
+              id="inputContraseñaRegistro"
+              required
+            />
+
+            <label for="inputContraseñaConfirmarRegistro"
+              >Confirme su contraseña</label
+            >
+            <input
+              type="password"
+              name="inputContraseñaConfirmarRegistro"
+              placeholder="Repita la misma contraseña"
+              min="12"
+              id="inputContraseñaConfirmarRegistro"
+              required
+            />
+
+            <button>Registrar Usuario</button>
+          </form>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

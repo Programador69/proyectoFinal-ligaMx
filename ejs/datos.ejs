@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Obteniendo datos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../estilos/datos.css">
+  </head>
+  <body>
+    <h1>Usuarios solicitados:</h1>
+
+    <section>
+        <article class="redireccion">
+            <a href="/inicio">Regresar a Inicio</a>
+        </article>
+      <article class="informacion">
+        <ul>
+            <li>ID</li>
+            <li>Nombre</li>
+            <li>Edad</li>
+            <li>Correo</li>
+            <li>Contraseña</li>
+          </ul>
+
+        <% data.forEach(d => { %>
+        <ul>
+          <li><%= d._id %></li>
+          <li><%= d.nombre %></li>
+          <li><%= d.fecha %></li>
+          <li><%= d.correo %></li>
+          <li><%= d.contraseña %></li>
+        </ul>
+        <% }) %>
+      </article>
+    </section>
+  </body>
+</html>

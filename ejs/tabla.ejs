@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../estilos/ligaMx.css">
+        <title>Tabla General</title>
+    </head>
+    <body>
+        <h1>Tabla general</h1>
+
+        <section>
+            <article>
+                <details>
+                    <summary>Leyenda de la tabla</summary>
+                    <ul class="leyenda">
+                        <li class="verde">Clasificados a liguilla directa</li>
+                        <li class="amarillo">Equipos en "repechaje"</li>
+                        <li class="rojo">Equipos fuera de liguilla</li>
+                    </ul>
+                </details>
+                <!-- TODO un cuadro para saber el codigo de colores y hacer con el elemento que viene con el sube y baja por defecto -->
+            </article>
+
+            <article class="resultados">
+                <% datos.forEach((dato) => {  %>
+                    <ul class="equipos">
+                        <% if (dato.pos <= 6) { %>
+                            <li class="verde"><%= dato.pos %></li>
+                        <% } else if (dato.pos <=10) { %>
+                            <li class="amarillo"><%= dato.pos %></li>
+                        <% } else { %>
+                            <li class="rojo"><%= dato.pos %></li>
+                        <% } %>
+                        <li><%= dato.equipo %></li>
+                        <li><%= dato.jj %></li>
+                        <li><%= dato.jg %></li>
+                        <li><%= dato.je %></li>
+                        <li><%= dato.jp %></li>
+                        <li><%= dato.gf %></li>
+                        <li><%= dato.gc %></li>
+                        <li><%= dato.dg %></li>
+                        <li><%= dato.pts %></li>
+                    </ul>
+                <% }) %>
+            </article>
+
+            <article class="link">
+                <a href="/inicio">Regresar a inicio</a>
+            </article>
+        </section>
+    </body>
+</html>

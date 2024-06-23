@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../estilos/inicio.css" />
+    <meta charset="utf-8">
+    <title>Pagina principal</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/tabla-general">Tabla general</a></li>
+          <li><a href="/ultimos-resultados">Ultimos resultados</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <h1>Bienvenido a la pagina principal</h1>
+    <main>
+      <section class="contenedor">
+        <article class="relleno">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum veniam
+            nulla, sunt voluptate harum maxime debitis incidunt. Eius fuga
+            tempore blanditiis, numquam architecto fugit possimus ut assumenda
+            nobis repellendus similique.
+          </p>
+          <a href="/cerrarSesion">Cerrar Sesion</a>
+        </article>
+
+        <article class="obtenerUsuarios">
+          <h3>Obtener todos los usuarios</h3>
+          <form action="/datos" method="get">
+            <button>Obtener todos los usuarios</button>
+          </form>
+        </article>
+
+        <article class="actualizarUsuarios">
+          <h3>Actualizar Usuario</h3>
+          <form action="/actualizar" method="post">
+            <label for="nuevoNombre">Nuevo nombre</label>
+            <input
+              type="text"
+              placeholder="Puedes poner el mismo"
+              required
+              id="nuevoNombre"
+              name="inputNuevoNombre"
+            />
+
+            <label for="fechaActualizada">Fecha de nacimiento</label>
+            <input
+              type="date"
+              required
+              id="fechaActualizada"
+              name="inputNuevaFecha"
+            />
+
+            <label for="correoActualizado">Nuevo correo</label>
+            <input
+              type="email"
+              placeholder="Puedes dejar el mismo"
+              required
+              id="correoActualizado"
+              name="inputNuevoCorreo"
+            />
+
+            <label for="contraseñaActualizada">Nueva contraseña</label>
+            <input
+              type="password"
+              placeholder="Puedes poner la misma que tenias"
+              required
+              id="contraseñaActualizada"
+              name="inputNuevaContraseña"
+              min="12"
+            />
+
+            <label for="contraseñaActualizadaConfirmada"
+              >Confirmar nueva contraseña</label
+            >
+            <input
+              type="password"
+              placeholder="Tiene que coincidir"
+              required
+              id="contraseñaActualizadaConfirmada"
+              name="inputNuevaContraseñaActualizada"
+              min="12"
+            />
+
+            <label for="idUsuarioActualizar">Ingrese el ID del usuario</label>
+            <input
+              type="text"
+              placeholder="Su ID es unico"
+              required
+              id="idUsuarioActualizar"
+              name="inputIdActualizar"
+            />
+
+            <button>Actualizar Usuario</button>
+          </form>
+        </article>
+
+        <article class="eliminarUsuarios">
+          <h3>Eliminar usuario</h3>
+          <form action="/eliminar" method="post">
+            <label for="inputID">Eliminar usuario</label>
+            <input
+              type="text"
+              placeholder="Escribe su ID"
+              id="inputID"
+              name="inputEliminar"
+              required
+            />
+
+            <button>Eliminar Usuario</button>
+          </form>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

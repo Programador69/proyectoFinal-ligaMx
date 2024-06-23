@@ -1,0 +1,115 @@
+body {
+    background-color: #00ade8;
+}
+
+header {
+    background-color: #003954;
+    padding: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: underline;
+    font-size: 1.3em;
+    color: #ccc;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #ccc;
+}
+
+h1 {
+    text-align: center;
+}
+
+.relleno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.relleno p {
+    padding: 20px;
+}
+
+.relleno a {
+    color: #00f9ff;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.contenedor article {
+    width: 500px;
+    min-height: 250px;
+    background-color: #006d98;
+    box-shadow: 0 0 20px #fff;
+    color: #00bff9;
+    border-radius: 5px;
+    margin: 20px 20px;
+}
+
+.contenedor article h3 {
+    text-align: center;
+}
+
+.actualizarUsuarios form, .eliminarUsuarios form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.actualizarUsuarios form input, .eliminarUsuarios form input {
+    margin-bottom: 15px;
+}
+
+.obtenerUsuarios form {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.obtenerUsuarios form button {
+    width: 80%;
+}
+
+.actualizarUsuarios form button {
+    margin-bottom: 20px;;
+}
+
+.eliminarUsuarios form {
+    height: 50%;
+    justify-content: center;
+}
+
+button {
+    background-color: #00f9ff;
+    border: none;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #003954;
+    color: #ccc;
+}
+
+input::placeholder {
+    color: #ccc;
+}
