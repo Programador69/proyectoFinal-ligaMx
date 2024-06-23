@@ -7,8 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "npx playwright install",
-    "start": "node index.js",
-    "poststart": "npx playwright install-deps"
+    "start": "npx playwright install-deps",
+    "poststart": "node index.js"
   },
   "author": "Manolo",
   "license": "ISC",
