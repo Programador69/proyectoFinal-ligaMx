@@ -11,7 +11,7 @@ import { tabla, resultados } from "./ligaMX.js";
 
 // usando opciones de express para poder correrlo y ademas poder leer peticiones y archivos locales
 const app = express()
-const puerto = 1234
+const puerto = process.env.PORT || 3000;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -217,6 +217,6 @@ app.get("/ultimos-resultados", validarToken, (req, res) => {
 // -----------------------------------------------------------
 
 // mostrando en consola que logramos levantar la coneccion en dicho puerto
-app.listen(puerto, ()=> {
+app.listen(puerto, 0.0.0.0, ()=> {
     console.log(`Escuchando en: http://localhost:${puerto}`)
 })
