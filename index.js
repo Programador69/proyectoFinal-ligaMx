@@ -217,6 +217,6 @@ app.get("/ultimos-resultados", validarToken, (req, res) => {
 // -----------------------------------------------------------
 
 // mostrando en consola que logramos levantar la coneccion en dicho puerto
-app.listen(puerto, 0.0.0.0, ()=> {
+app.listen(puerto, "0.0.0.0", ()=> {
     console.log(`Escuchando en: http://localhost:${puerto}`)
 })
