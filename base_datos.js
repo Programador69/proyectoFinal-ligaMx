@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 (async () => {
   await mongoose
-    .connect(process.env.MONGO_URL, {})
+    .connect(process.env.MONGO_PRIVATE_URL, {})
     .then((db) => console.log("Conectado a la BD"))
     .catch((e) => console.log(e));
 })();
