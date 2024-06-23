@@ -27,7 +27,7 @@ app.set("views", path.join(__dirname, "ejs"))
 
 // generando 2 funciones, una para la creacion de un token de acceso y otra para poder validar ese token creado
 const generarTokenAcceso = (datosUsuario) => {
-    return jwt.sign(datosUsuario, process.env.SECRET, {expiresIn: "5m"})
+    return jwt.sign(datosUsuario, process.env.SECRET, {expiresIn: "8m"})
 }
 
 const validarToken = (req, res, next) => {
