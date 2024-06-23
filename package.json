@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "npx playwright install  playwright install-deps",
-    "start": "node index.js"
+    "prestart": "npx playwright install",
+    "start": "node index.js",
+    "poststart": "npx playwright install-deps"
   },
   "author": "Manolo",
   "license": "ISC",
