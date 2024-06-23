@@ -24,7 +24,7 @@ const iniciarSesion = async (nombre, contraseña, res, generarTokenAcceso) => {
     const tokenAcceso = generarTokenAcceso(infoUsuario);
 
     const opciones = {
-      maxAge: 50000,
+      maxAge: 360000,
       httpOnly: true,
       secure: true,
       sameSite: "strict",
